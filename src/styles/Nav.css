@@ -4,7 +4,8 @@ nav{
     justify-content: space-between;
     color : white;
     background-color: #18181b;
-    padding : 2rem;
+    padding : 0 2rem;
+    height : 80px;
 }
 .nav-logo{
     font-weight: bold;

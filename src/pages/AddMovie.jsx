@@ -1,14 +1,16 @@
 import axios from "axios";
 
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const AddMovie = () => {
+  const navigate = useNavigate(); //return navigate function
   const { register, handleSubmit } = useForm(); //2
 
   const onSubmit = async (values) => {
     values.popularity = +values.popularity;
-    const res = await axios.post("http://localhost:4000/movies", values);
-    console.log(res.data);
+    await axios.post("http://localhost:4000/movies", values);
+    navigate("/");
   };
   return (
     <fieldset>

@@ -1,0 +1,40 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+.home-layout {
+    margin: 2rem 0 !important;
+    color : #080405;
+    display : flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width : 80%;
+    margin : auto;
+}
+.card {
+    background-color: beige;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height : 300px;
+    width : 250px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;;
+}
+
+.card-body {
+    
+    position : absolute;
+    bottom : 5px;
+    padding : 1rem;
+
+}
+.card-img {
+    width : 100%;
+    height : 100%;
+}
+
+body {
+    background-color: #080405;
+}

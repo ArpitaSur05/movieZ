@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { BsFillStarFill } from "react-icons/bs";
 import axios from "axios";
 import "../styles/Home.css";
 
@@ -15,17 +14,13 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home-layout">
+    <div className="home">
       {movies.map((movie) => (
-        <div className="card" key={movie.id}>
-          <img className="card-img" src="https://placekitten.com/200/300" />
+        <div key={movie.id} className="card">
+          <img src="https://placekitten.com/200/300" />
           <div className="card-body">
-            <h3 className="card-title">{movie.title}</h3>
-            <span className="card-pop">
-              <BsFillStarFill />
-              {movie.popularity}
-            </span>
-            <p className="card-desc">{movie.description}</p>{" "}
+            <h3>{movie.title}</h3>
+            <span>⭐{movie.popularity}</span>
           </div>
         </div>
       ))}
